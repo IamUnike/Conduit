@@ -38,7 +38,7 @@ An Application is the top-level container for your integration — it holds your
 
 You're automatically placed in that Application's Sandbox environment.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 13, 2026, 04_19_15 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure2.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -118,7 +118,7 @@ console.log(endpoint.id);
 
 The response includes the endpoint's id and a signing\_secret — save the signing secret now; it's used in Step 5 and, like an API key, is shown only once.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 13, 2026, 05_26_19 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure3.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

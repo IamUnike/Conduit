@@ -25,7 +25,7 @@ The Dashboard provides a web interface over the same underlying data as the Admi
 
 An environment selector (Sandbox / Live) persists in the top navigation bar across every section — see FIG-SCREEN-04 in Getting Started. All data shown in the Dashboard is scoped to the currently selected environment; switching environments does not navigate away from the current section, only refreshes its data.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 29, 2026, 05_52_36 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure5.png" alt=""><figcaption></figcaption></figure>
 
 ### Managing Applications and Environments
 
@@ -47,7 +47,7 @@ Endpoint list view shows, per endpoint: URL, subscribed event types (as chips), 
 
 Creating an endpoint: Endpoints → New Endpoint opens a form for URL, event type subscriptions (multi-select), and optional retry policy overrides (defaults are pre-filled and editable).
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 29, 2026, 05_52_56 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure6.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Pausing an endpoint:** From the endpoint's detail page, toggle Status from Active to Paused. The toggle is immediate — no confirmation step, since pausing is non-destructive and reversible (see Guides → Registering and managing endpoints for the behavioral implications of pausing).
 
@@ -70,13 +70,13 @@ The Deliveries screen is the primary tool for answering "did this webhook go thr
 
 **Viewing a delivery's raw payload and response:** From an expanded attempt, View payload shows the exact JSON body sent, and View response shows the response body and headers the endpoint returned — essential for distinguishing a Conduit-side delivery failure from an application-level error on the receiving end.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 29, 2026, 05_53_04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure7.png" alt=""><figcaption></figcaption></figure>
 
 ### Diagnosing a Failed Delivery
 
 This is the core support workflow (Workflow C in the product foundation) — distinguishing _why_ a delivery failed before deciding on a remediation.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 29, 2026, 05_53_11 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure6 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Walking the tree in practice:**
 
@@ -95,7 +95,7 @@ Once the underlying cause has been resolved (§7.5), replay is available directl
 
 **Bulk replay:** From the Dead Letter Queue screen, select multiple entries (e.g., all deliveries that failed during a known outage window) and choose Replay selected. Bulk replay is subject to the same rate limits as individual replay calls (§5.3) and may be queued rather than executed instantaneously for large selections.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 29, 2026, 05_56_37 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Replay does not reset an endpoint's retry policy or attempt count for future automatic retries — it is a one-time, manually triggered attempt outside the normal retry sequence.
 

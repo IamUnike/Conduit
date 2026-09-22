@@ -10,7 +10,7 @@ Conduit is a managed platform for delivering outbound webhooks. If your applicat
 
 You send Conduit a single event through the Ingest API. Conduit takes over from there: it identifies which endpoints are subscribed to that event type, signs the payload, delivers it over HTTPS, retries automatically on failure, and records the full delivery history so you can answer "did this webhook go through?" without guessing.
 
-<figure><img src="../.gitbook/assets/ChatGPT Image Jul 13, 2026, 05_30_59 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/figure4.png" alt=""><figcaption></figcaption></figure>
 
 Conduit replaces the retry loops, signature verification, and delivery logging that most teams end up building, and rebuilding in-house.
 
